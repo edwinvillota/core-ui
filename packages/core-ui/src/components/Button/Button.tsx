@@ -1,5 +1,5 @@
-import React from "react";
-import "./Button.css";
+import React from 'react';
+import './Button.css';
 
 export interface ButtonProps {
   /**
@@ -13,7 +13,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: "small" | "medium" | "large";
+  size?: 'small' | 'medium' | 'large';
   /**
    * Button contents
    */
@@ -30,18 +30,18 @@ export interface ButtonProps {
 const Button = ({
   primary = true,
   backgroundColor,
-  size = "medium",
+  size = 'medium',
   onClick,
   label,
 }: ButtonProps) => {
   const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+    ? 'storybook-button--primary'
+    : 'storybook-button--secondary';
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
+      className={['storybook-button', `storybook-button--${size}`, mode].join(
+        ' '
       )}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
