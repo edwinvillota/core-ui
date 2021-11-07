@@ -32,6 +32,7 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-react": "^7.26.1",
     "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
     "postcss": "^8.3.9",
     "prettier": "2.4.1",
     "react": "^17.0.2",
@@ -51,6 +52,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c",
-    "prepare": "cd ../.. && husky install packages/core-ui/.husky"
+    "prepare": "cd ../.. && husky install packages/core-ui/.husky",
+    "pre-commit-lint": "yarn lint-staged"
   }
 }
