@@ -5,6 +5,14 @@
     "packages/*"
   ],
   "scripts": {
-    "demo": "yarn workspace demo-app start"
+    "demo": "yarn workspace demo-app start",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "core-ui": "^0.1.3",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
   }
 }
