@@ -1,9 +1,18 @@
 {
-  "name": "core-ui",
-  "version": "1.0.0",
-  "description": "Core components library",
-  "main": "index.js",
-  "repository": "https://github.com/edwinvillota/core-ui",
-  "author": "Edwin Villota",
-  "license": "MIT"
+  "private": true,
+  "name": "core-ui-package",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "demo": "yarn workspace demo-app start",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "core-ui": "^0.1.3",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
+  }
 }
