@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import eslint from '@rollup/plugin-eslint'
+import babel from '@rollup-plugin-babel'
 
 const packageJson = require("./package.json");
 
@@ -26,7 +27,15 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    babel({
+      exclude: 'node_modules/**',
+      babelHelpers: 'bundled'
+    }),
+    typescript({ 
+      useTsconfigDeclarationDir: true, exclude: ['*.d.ts', '**/*.d.ts', '**/*.test.tsx'],
+      rollupCommonJSResolveHack: true,
+      clean: true
+    }),
     postcss({
         extensions: ['.css']
     }),

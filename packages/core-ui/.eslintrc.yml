@@ -1,6 +1,7 @@
 env:
   browser: true
   es2021: true
+  jest/globals: true
 extends:
   - plugin:react/recommended
   - plugin:@typescript-eslint/recommended
@@ -15,6 +16,9 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
+  - 'jest'
+  - 'jest-dom'
+  - 'testing-library'
 rules:
   {
     'no-use-before-define': [0],
