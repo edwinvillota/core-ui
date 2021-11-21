@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637463969259" clover="3.2.0">
-  <project timestamp="1637463969259" name="All files">
+<coverage generated="1637464924933" clover="3.2.0">
+  <project timestamp="1637464924933" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="21" coveredelements="21" complexity="0" loc="19" ncloc="19" packages="1" files="3" classes="3"/>
     <file name="Button.styles.ts" path="/home/edwin/Documents/DEV/core-ui/packages/core-ui/src/components/atoms/Button/Button.styles.ts">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
