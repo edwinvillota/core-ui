@@ -1,10 +1,9 @@
-import React from 'react';
 import { Button } from '.';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 const setup = () => {
-  render(<Button type="Primary" />);
+  render(<Button type="default" />);
 };
 
 describe('Button', () => {

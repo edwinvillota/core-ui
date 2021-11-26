@@ -1,9 +1,6 @@
-import React, { HTMLAttributes, FC } from 'react';
+import { FC } from 'react';
 import { StyledButton } from './Button.styles';
-
-export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  type: 'Primary' | 'Secondary';
-}
+import { IButtonProps } from './Buttons.props';
 
 const Button: FC<IButtonProps> = ({ children }) => {
   return <StyledButton>{children}</StyledButton>;
